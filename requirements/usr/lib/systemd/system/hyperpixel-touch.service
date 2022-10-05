@@ -7,7 +7,7 @@ After=local-fs.target
 ExecStart=/usr/bin/hyperpixel-touch
 Restart=on-failure
 Type=forking
-PIDFile=/var/run/hyperpixel-touch.pid
+PIDFile=/run/hyperpixel-touch.pid
 
 [Install]
 WantedBy=multi-user.target

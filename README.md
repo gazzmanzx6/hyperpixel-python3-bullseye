@@ -1,4 +1,10 @@
-![HyperPixel](https://ci6.googleusercontent.com/proxy/YfpDcYSZFXtvv1LQvBIXDtw6FxcszF5TjyhccIQHJGkMGMoEGhPKsX99aFiLl7Ktj13uP6MotUZTroGpkaCQ_bvAYkEa9yt6EXYCE5IG8XOjdZDZvC7eOkdljnwDpWjn20xakMVj__3ktnf8AKg9oPtRSTU7TmNkin670P8=s0-d-e1-ft#https://gallery.mailchimp.com/96bc28d6ec83869a3f0b79a62/images/bfd012fb-9ad5-4fc8-9d9c-9c66a9ecb80d.png)
+fix for for python3 on bullseye (and for change of i2c bus number on buster and bullseye) 
+
+you may need the triggerhapy.socket to fix an evdev calling triggerhappy segfault, maybe that's only on buster.
+
+you may need to enable i2c in raspi-config
+
+=====
 
 A high-resolution, high-speed 3.5" TFT display for your Raspberry Pi.
 
