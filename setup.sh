@@ -36,7 +36,7 @@ armv6="yes" # whether armv6 processors are supported
 armv7="yes" # whether armv7 processors are supported
 armv8="yes" # whether armv8 processors are supported
 raspbianonly="no" # whether the script is allowed to run on other OSes
-pkgdeplist=( "python-rpi.gpio" "python-smbus" ) # list of dependencies
+pkgdeplist=( "python3-rpi.gpio" "python3-smbus" ) # list of dependencies
 
 FORCE=""
 
@@ -189,8 +189,8 @@ if ! [ -f "$(which python2)" ] && ! [ -f "$(which python3)" ]; then
     apt_pkg_install "python"
 fi
 
-if apt_pkg_req "python-evdev" &> /dev/null; then
-    sudo dpkg -i ./dependencies/python-evdev_0.6.4-1_armhf.deb
+if apt_pkg_req "python3-evdev" &> /dev/null; then
+    sudo dpkg -i ./dependencies/python3-evdev_1.4.0+dfsg-1+b1_armhf.deb
 fi
 
 for pkgdep in ${pkgdeplist[@]}; do
